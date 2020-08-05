@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int main() {
+	system("chcp 1251>null");
+	int x, y;
+	printf("Введите число оканчивающееся на 5, но не превышающее 400000: \n"); // не получается использовать if
+	scanf_s("%d", &x); 
+	y = x / 10 * (x / 10 + 1);
+	
+	printf("%d25", y);
+	
+
+		
+	return 0;
+
+}
